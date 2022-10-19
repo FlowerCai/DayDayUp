@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex容器属性</title>
+  <!-- <style>
+
+    .flex-container {
+      background: skyblue;
+      height: 600px;
+      width: 600px;
+      display: flex;
+      flex-direction: column;
+      /* 主轴右边对齐 */
+
+      justify-content: flex-end;
+      /* 居中对齐 */
+      justify-content: center;
+      /* 左右两侧间距相等 */
+      justify-content: space-around;
+      /* 两端对齐相等 */
+      justify-content: space-between;
+      /* 每个项目间距相等  有兼容性问题少用*/
+      justify-content: space-evenly;
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      /* height:100px; */
+    }
+
+    .flex-item:nth-child(n){
+      background-color: khaki;  
+    }
+
+    .flex-item:nth-child(2n){
+      background-color: pink;
+    }
+  </style> -->
+  <!-- <style>
+/* align-items属性定义项目在交叉轴上如何对齐，只对单行有效 */
+    .flex-container {
+      background: skyblue;
+      height: 600px;
+      width: 600px;
+      display: flex;
+      /* 整个高度 */
+      align-items: stretch;
+      /*  */
+      align-items: flex-start;
+      align-items: center;
+      justify-content: center;
+      align-items: flex-end;
+      align-items: baseline;
+    }
+
+    .flex-item {
+      width: 100px;
+      font-size: 50px;
+      /* height: 100px; */
+      /* height:100px; */
+    }
+
+    .flex-item:nth-child(n){
+      /* font-size: 90px; */
+      background-color: khaki;  
+    }
+
+    .flex-item:nth-child(2n){
+      background-color: pink;
+    }
+  </style> -->
+
+  <style>
+    .flex-container{
+      width: 300px;
+      height: 600px;
+      background-color: skyblue;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: space-around;
+      align-content: space-between;
+      align-content: flex-end;
+    }
+
+    .flex-item {
+      width: 100px;
+      height: 100px;
+      /* font-size: 40px; */
+    }
+    .flex-item:nth-child(n){
+      background-color: khaki;
+    }
+    .flex-item:nth-child(2n){
+      background-color: pink;
+    }
+    .item1 {
+      height:200px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex-container">
+    <div class="flex-item item1">1abcX</div>
+    <div class="flex-item">2abcX</div>
+    <div class="flex-item">3abcX</div>
+    <div class="flex-item">4abcX</div>
+    <div class="flex-item">3abcX</div>
+    <div class="flex-item">4abcX</div>
+  </div>
+<!-- 
+  <div class="flex-container">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div> -->
+</body>
+</html>

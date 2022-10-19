@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>navbar</title>
+  <link rel="stylesheet" href="../../assets/iconfont/iconfont.css">
+
+  <style>
+    .nav-bar {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      padding: 5px 0;
+      z-index: 1000;
+      background: #fff;
+      transform: translateZ(0);
+      -webkit-transform: translateZ(0);
+      /* background-color: skyblue; */
+    }
+
+    .nav-list{
+      width: 100%;
+      flex-direction: row;
+      padding: 0;
+      display: flex;
+      justify-content:space-between
+    }
+
+    .nav-list-item {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          text-align: center;
+          color: khaki;
+    }
+
+    .nav-list-item.div-active {
+      color:#1baeae;
+    }
+
+    i {
+      text-align: center;
+      font-size: 22px;
+        /* font-size: 82px; */
+    }
+
+    span{
+      font-size: 12px;
+    }
+    .van-icon-shopping-cart-o {
+      margin: 0 auto;
+      margin-bottom: 2px;
+    }
+
+
+  </style>
+</head>
+<body>
+  <div class="nav-bar van-hairline-top">
+    <ul class="nav-list">
+      <div class="nav-list-item">
+        <i class="iconfont nbiconshouye"></i>
+        <span>首页</span>
+      </div>
+
+      <div class="nav-list-item active" to="/category">
+        <i class="iconfont nbiconfenlei"></i>
+        <span>分类</span>
+      </div>
+
+      <div class="nav-list-item active" to="/cart">
+        <i class="iconfont nbicongouwuchekong"></i>
+        <span>购物车</span>
+      </div>
+
+      <div class="nav-list-item active" to="/user">
+        <i class="iconfont nbiconwode"></i>
+        <span>我的</span>
+      </div>
+    </ul>
+  </div>
+</body>
+</html>
