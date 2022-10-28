@@ -5,7 +5,6 @@ var mergeTwoLists = function(list1, list2) {
     return list2
   }
   if(list2 == null ){
-     
     return list1
   }
   while( list1 != null | list2 != null){
