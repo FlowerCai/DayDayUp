@@ -8,7 +8,8 @@ let str = 'ababsbdbf'.replace('b', '')
 console.log(str)
 
 const a = ['12','243', '343']
-console.log(a.indexOf('243'))
+console.log(a.unshift(20))
+console.log(a)
 let s = new Set()
 s.add('abc')
 s.add('abc')
@@ -23,3 +24,7 @@ console.log(0 === undefined)
 const c = 'abxhbshd'
 console.log(c.split(''))
 
+let num1 = ''
+let num2 = num1 + 1
+let num3 = num2 + 1
+console.log(num3)
