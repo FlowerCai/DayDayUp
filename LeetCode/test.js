@@ -19,3 +19,7 @@ b = b.substr(0, b.length-1)
 console.log(b)
 
 console.log(0 === undefined)
+
+const c = 'abxhbshd'
+console.log(c.split(''))
+
