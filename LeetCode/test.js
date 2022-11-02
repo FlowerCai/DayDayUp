@@ -1,30 +1,41 @@
-let arr = ['xcbnshjc', 'cnsj', 'snj', 'sxncj']
+let arr = ["xcbnshjc", "cnsj", "snj", "sxncj"]
 
-let arr2 = [1,23,5,64,67,23]
+let arr2 = [1, 23, 5, 64, 67, 23]
 
 console.log(arr.sort())
-console.log(arr2.sort((a, b) => a-b))
-let str = 'ababsbdbf'.replace('b', '')
+console.log(arr2.sort((a, b) => a - b))
+let str = "ababsbdbf".replace("b", "")
 console.log(str)
 
-const a = ['12','243', '343']
+const a = ["12", "243", "343"]
 console.log(a.unshift(20))
 console.log(a)
 let s = new Set()
-s.add('abc')
-s.add('abc')
+s.add("abc")
+s.add("abc")
 console.log(s)
 
-let b = 'cbashcd'
-b = b.substr(0, b.length-1)
+let b = "cbashcd"
+b = b.substr(0, b.length - 1)
 console.log(b)
 
 console.log(0 === undefined)
 
-const c = 'abxhbshd'
-console.log(c.split(''))
+const c = "abxhbshd"
+console.log(c.split(""))
 
-let num1 = ''
+let num1 = ""
 let num2 = num1 + 1
 let num3 = num2 + 1
 console.log(num3)
+
+const a1 = new Map()
+const k1 = {
+  a: 1,
+}
+const k2 = {
+  a: 1,
+}
+a1.set(k1, "abc")
+a1.set(k2, "and")
+console.log(a1)
