@@ -1,16 +1,5 @@
-var jump = function (nums) {
-  let len = nums.length
-  let end = 0
-  let maxPosition = 0
-  let steps = 0
-  for (let i = 0; i < len - 1; i++) {
-    maxPosition = Math.max(maxPosition, i + nums[i])
-    if (i == end) {
-      end = maxPosition
-      steps++
-    }
-  }
-  return steps
+var merge = function (nums1, m, nums2, n) {
+  const len = nums1.length
+  nums1
 }
-
-console.log(jump([2, 3, 1, 1, 4]))
+console.log(merge([0], 0, [1], 1))
