@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="" />
+    <title>Document</title>
+    <style>
+      .item1 {
+        /* height: 30px; */
+        line-height: 300px;
+        /* text-align: center; */
+        color: red;
+      }
+
+      body,
+      ul,
+      li {
+        margin: 0;
+        padding: 0;
+      }
+      ul {
+        list-style: none;
+        width: 100px;
+        margin: 50px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 5px 10px 10px;
+        background-color: skyblue;
+      }
+      ul li {
+        font-size: 16px;
+        border-bottom: 1px dashed #fff;
+        color: #fff;
+        height: 35px;
+        line-height: 35px; /*单行文字垂直居中*/
+        text-align: center; /*文字水平居中*/
+      }
+      ul li i {
+        /*文字前小图标*/
+        display: inline-block;
+        width: 15px;
+        height: 15px;
+        margin-right: 5px;
+        background-image: url(images/icon-xm.png);
+        vertical-align: middle; /*控制元素垂直居中,但实际效果仍会有少许偏差*/
+        /*通过相对定位来微调位置*/
+        position: relative;
+        top: -2px;
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>课程介绍</li>
+      <li><i></i>项目实战</li>
+      <li>课程优势</li>
+      <li>课程大纲</li>
+    </ul>
+    <div class="item1">
+      这是采用line-height text-align方法垂直居中vfsdvrfwrtegrefeqfwebr的 <br />
+      cndjhbh
+    </div>
+  </body>
+
+  <script>
+    for (let i = 1; i <= 10; i++) {
+      let a = document.createElement("a")
+      a.innerHTML = "abcd" + i + "jcsk" + "<br>"
+      document.body.appendChild(a)
+      a.addEventListener("click", function (e) {
+        // e.preventDefault()
+        alert(i)
+      })
+    }
+  </script>
+</html>
