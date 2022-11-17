@@ -1,17 +1,19 @@
-var nextGreaterElement = function (nums1, nums2) {
-  const len1 = nums1.length
-  const len2 = nums2.length
-  let res = new Array(len1).fill(-1)
-
+var numMatchingSubseq = function (s, words) {
+  const dic = {}
+  const len1 = s.length
+  const len2 = words.length
   for (let i = 0; i < len1; i++) {
-    const start = nums2.indexOf(nums1[i])
-    for (let j = start + 1; j < len2; j++) {
-      if (nums2[j] > nums1[i]) {
-        res[i] = nums2[j]
-        break
-      }
+    if (s[i] in dic) {
+      dic[s[i]].push(i)
+    } else {
+      dic[s[i]] = new Array()
+      dic[s[i]].push(i)
     }
   }
-  return res
+
+  return 1
 }
-console.log(nextGreaterElement([4, 1, 2], [1, 3, 4, 2]))
+
+console.log(
+  numMatchingSubseq("dsahjpjauf", ["ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"])
+)
