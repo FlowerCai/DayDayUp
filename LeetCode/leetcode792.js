@@ -65,7 +65,3 @@ const binarySearch = function (arr, target) {
   }
   return arr[left]
 }
-console.log(
-  numMatchingSubseq("dsahjpjauf", ["ahjpjau", "ja", "ahbwzgqnuk", "tnmlanowax"])
-)
-// console.log(binarySearch([0, 1, 2, 3, 4, 5, 6], 7))
